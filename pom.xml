@@ -11,12 +11,10 @@
 
   <name>Maven Project</name>
 
-  <!-- 🔥 CONFIGURACIÓN MODERNA JAVA 21 -->
+  <!-- Configuracion Java 21 -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-    <!-- Java -->
     <maven.compiler.release>21</maven.compiler.release>
   </properties>
 
@@ -29,7 +27,7 @@
     <pluginManagement>
       <plugins>
 
-        <!-- ✅ Compiler moderno -->
+        <!-- Plugin compiler actualizado -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -39,12 +37,13 @@
           </configuration>
         </plugin>
 
-        <!-- (Opcional) Plugins actualizados básicos -->
+        <!-- Plugin de tests -->
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.2.5</version>
         </plugin>
 
+        <!-- Plugin jar -->
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.3.0</version>
@@ -54,7 +53,7 @@
     </pluginManagement>
 
     <plugins>
-      <!-- Aplicar compiler -->
+      <!-- Aplicacion del compiler -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -62,10 +61,10 @@
     </plugins>
   </build>
 
-  <!-- Dependencias (puedes mantener las tuyas, pero ojo que son muy antiguas) -->
   <dependencyManagement>
     <dependencies>
 
+      <!-- Dependencias antiguas (pueden mantenerse si es laboratorio) -->
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
@@ -78,6 +77,7 @@
         <version>2.2</version>
       </dependency>
 
+      <!-- Tests -->
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
