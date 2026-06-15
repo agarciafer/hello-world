@@ -4,7 +4,7 @@
     // ========================================================================
     // VARIABLES DE DESPLIEGUE (¡Cambiad esto en vuestras pipelines!)
     // ========================================================================
-    String appVersion = "2.0.0"; 
+    String appVersion = "3.0.0"; 
     String releaseName = "CNTG-PreProduccion";
     String customMessage = "¡Bienvenidos al Bootcamp de DevOps! Despliegue completado con éxito.";
     String environment = "Desarrollo"; // Puede ser DEV, QA, PROD
